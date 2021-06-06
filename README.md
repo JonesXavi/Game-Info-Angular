@@ -1,6 +1,42 @@
-# Game-Info-Angular
-Games Info DB App built using Angular 11
+# Angular Series - Games Info App [Demo](https://jonesxavi.github.io/Game-Info-Angular)
 
+
+## What ?
+
+Games Info App built using Angular 11 utilizing a public [API](https://rawg.io/apidocs)
+
+## Why ?
+
+To brush up the Angular and get started with Angular 11. To create a public API based App.
+
+## Tried Something New ?
+
+Yes, used `angular-cli-ghpages` to deploy to Github directly.
+
+## How to deploy to github
+
+1. Create a repo in github, push your code to main branch.
+2. Do `npm i angular-cli-ghpages`
+3. Do `git checkout -b gh-pages`
+4. Do `ng build --base-href "https://<github_username>.github.io/<project_name>"`
+5. When the build is complete, make a copy of `dist/index.html` and name it `dist/404.html`
+6. Finally, Do `ngh --dir dist/<project_name>`
+
+## How to use the public API
+
+1. Create an account in `https://rapidapi.com/accujazz/api/rawg-video-games-database/details`
+2. Under RAWG Video Games Database page, find Endpoints Tab under which you can find the x-rapidapi-key & x-rapidapi-host to use in httpheaders
+3. Goto `https://rawg.io/apidocs`, create an account and get the `API key` to use in params in httpheaders interceptors file.
+
+Or you can directly goto `https://rawg.io/apidocs`, create an account, get the `API key` and use directly like below in service call:
+
+`${env.BASE_URL}/api/games?key=${env.KEY}`
+`BASE_URL = 'https://api.rawg.io', KEY = <Your API Key>`
+
+Either way it works!
+
+
+## Angular Default Documentation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
@@ -8,22 +44,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
