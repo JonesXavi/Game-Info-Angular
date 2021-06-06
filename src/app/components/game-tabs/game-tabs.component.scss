@@ -1,7 +1,7 @@
 .game {
 
   &-tabs {
-    background: rgb(63 81 181 / 61%);
+    background: #408457;
     color: #fff;
     text-align: left;
     padding: 10px;
@@ -26,6 +26,7 @@
 
     ::ng-deep .mat-tab-labels {
       justify-content: center;
+      background: #408457;
     }
   }
 
