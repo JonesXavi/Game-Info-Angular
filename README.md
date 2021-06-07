@@ -1,4 +1,4 @@
-# Angular Series - Games Info App [Demo](https://jonesxavi.github.io/Game-Info-Angular)
+# Angular Series - Games Info App [Demo](https://jonesxavi-game-info-angular.netlify.app/Game-Info-Angular/)
 
 
 ## What ?
@@ -8,19 +8,6 @@ Games Info App built using Angular 11 utilizing a public [API](https://rawg.io/a
 ## Why ?
 
 To brush up the Angular and get started with Angular 11. To create a public API based App.
-
-## Tried Something New ?
-
-Yes, used `angular-cli-ghpages` to deploy to Github directly.
-
-## How to deploy to github
-
-1. Create a repo in github, push your code to main branch.
-2. Do `npm i angular-cli-ghpages`
-3. Do `git checkout -b gh-pages`
-4. Do `ng build --base-href "https://<github_username>.github.io/<project_name>"`
-5. When the build is complete, make a copy of `dist/index.html` and name it `dist/404.html`
-6. Finally, Do `ngh --dir dist/<project_name>`
 
 ## How to use the public API
 
